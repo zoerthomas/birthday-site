@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 32px;
   background: linear-gradient(to bottom, #1ce2c8a7 0%, #a62cc1 73%);
   border-radius: 50px;
 }
@@ -20,6 +20,17 @@
   margin: 0;
   padding: 1rem;
   font-size: larger;
+  text-align: center;
+}
+
+.description p z {
+  text-decoration: italics;
+  font-variant: normal;
+}
+
+.description p a {
+  text-decoration: underline;
+  color: #60afff;
 }
 
 /* Tablet and Smaller Desktop */
@@ -29,15 +40,6 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
 
 @keyframes rotate {
   from {
@@ -49,7 +51,7 @@
 }
 
 .wordart {
-  font-size: 4em;
+  font-size: 3rem;
   font-weight: bold;
   position: relative;
   z-index: 1;
@@ -90,7 +92,7 @@
   height: 200px;
   -webkit-perspective: 1000px;
   perspective: 1000px;
-  margin: 50px;
+  margin: -20px 10px 10px;
 }
 
 .card-inner {
@@ -103,11 +105,6 @@
   transition: -webkit-transform 0.999s;
   transition: transform 0.999s;
   transition: transform 0.999s, -webkit-transform 0.999s;
-}
-
-.card:hover .card-inner {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
 }
 
 .card-front,
@@ -135,8 +132,6 @@
   justify-content: center;
   font-size: 24px;
   font-family: Impact;
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
 }
 
 .card-back {
@@ -155,6 +150,4 @@
   justify-content: center;
   font-size: 24px;
   font-family: Impact;
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
 }

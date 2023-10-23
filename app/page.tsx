@@ -37,7 +37,7 @@ export default function Home() {
                   <div className={styles["card-front"]}>
                     <p>
                       28th October 2023 <br />
-                      6pm til late
+                      7pm til late
                     </p>
                   </div>
                 </div>
